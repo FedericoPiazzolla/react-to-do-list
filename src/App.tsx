@@ -1,3 +1,11 @@
+import CourseGoal from "./components/CourseGoal.tsx";
+
 export default function App() {
-  return <h1>Let's get started!</h1>;
+  return (
+    <main>
+      <CourseGoal title="Learn React + TS">
+        <p>Learn it from the groud up</p>
+      </CourseGoal>
+    </main>
+  );
 }
