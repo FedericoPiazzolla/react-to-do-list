@@ -12,7 +12,7 @@ Una semplice applicazione To-Do List realizzata con **React** e **TypeScript**. 
 
 ## 📸 Screenshot
 
-![To-Do List Screenshot](./src/assets/Screenshot%202025-07-23%20alle%2018.36.36.png)
+![To-Do List Screenshot](./src/assets/Screenshot%202025-07-23%20alle%2019.21.11.png)
 
 ## ✅ Funzionalità
 
