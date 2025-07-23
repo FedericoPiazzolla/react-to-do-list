@@ -1,69 +1,59 @@
-# React + TypeScript + Vite
+# 📝 React To-Do List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una semplice applicazione To-Do List realizzata con **React** e **TypeScript**. Permette di aggiungere, visualizzare e rimuovere obiettivi personali. Il progetto è stato pensato per esercitarsi con **React Hooks**, gestione dello stato e componenti tipizzati.
 
-Currently, two official plugins are available:
+## 🛠️ Tecnologie utilizzate
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ React
+- ⌨️ TypeScript
+- 🧠 React Hooks (`useState`)
+- 💅 CSS Modules (opzionale)
+- 📦 Vite (come bundler)
 
-## Expanding the ESLint configuration
+## 📸 Screenshot
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![To-Do List Screenshot](./src/assets/Screenshot%202025-07-23%20alle%2018.36.36.png)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ✅ Funzionalità
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- [x] Aggiunta di nuovi obiettivi
+- [x] Rimozione degli obiettivi esistenti
+- [x] Interfaccia chiara e responsive
+- [x] Gestione del form in TypeScript
+- [x] Tipizzazione dei props tra componenti
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📁 Struttura delle cartelle
+
+src/
+├── components/
+│ ├── Header.tsx
+│ ├── NewGoal.tsx
+│ └── CourseGoalList.tsx
+├── assets/
+│ └── goals.jpg
+├── App.tsx
+└── main.tsx
+
+## ▶️ Avvio del progetto
+
+Assicurati di avere `Node.js` installato.
+
+```bash
+# Clona il progetto
+git clone https://github.com/FedericoPiazzolla/react-to-do-list.git
+
+# Vai nella cartella
+cd react-to-do-list
+
+# Installa le dipendenze
+npm install
+
+# Avvia il server di sviluppo
+npm run dev
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📌 Autore
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Federico Piazzolla
+https://github.com/FedericoPiazzolla
