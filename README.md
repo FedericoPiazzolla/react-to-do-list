@@ -22,18 +22,6 @@ Una semplice applicazione To-Do List realizzata con **React** e **TypeScript**. 
 - [x] Gestione del form in TypeScript
 - [x] Tipizzazione dei props tra componenti
 
-## 📁 Struttura delle cartelle
-
-src/
-├── components/
-│ ├── Header.tsx
-│ ├── NewGoal.tsx
-│ └── CourseGoalList.tsx
-├── assets/
-│ └── goals.jpg
-├── App.tsx
-└── main.tsx
-
 ## ▶️ Avvio del progetto
 
 Assicurati di avere `Node.js` installato.
